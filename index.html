@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James B. Ampo-an | BSEMC Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Ambient Background Glows -->
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Glassmorphism Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="brand">
+        <a href="#home" class="logo">JBA<span class="dot">.</span></a>
+        <span class="tagline">BSEMC Student &bull; Interactive Media & Web Creator</span>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Graphical User Interface: Auth Controls -->
+      <div class="auth-controls" id="authControls">
+        <button id="openLoginBtn" class="btn btn-primary btn-sm">Log In</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Logged-In Dashboard Banner (Hidden until logged in) -->
+  <div id="userDashboardBar" class="dashboard-bar hidden">
+    <div class="container dashboard-flex">
+      <div class="user-status">
+        <span class="status-dot"></span>
+        <span>Welcome back, <strong id="loggedUserDisplay">James B. Ampo-an</strong> &bull; Student Portal Session Active</span>
+      </div>
+      <div class="dashboard-actions">
+        <button id="editProfileQuickBtn" class="btn-text">Quick Edit Bio</button>
+        <button id="logoutBtn" class="btn btn-danger btn-sm">Log Out</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home / Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="pill-badge">
+        <span class="pulse"></span> 1st Year BSEMC Student &bull; Open for Creative Collaborations
+      </div>
+      <h1>Hi, I'm <span class="gradient-text">James B. Ampo-an</span></h1>
+      <p class="typing-wrapper">I explore <span id="typingText" class="typing-text"></span><span class="cursor">|</span></p>
+      <p class="hero-intro" id="heroBio">
+        A 1st-year Bachelor of Science in Entertainment and Multimedia Computing (BSEMC - 1C) student from Bukidnon State University, passionate about digital design, interactive web experiences, and creative computing.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#about" class="btn btn-glass">About Me</a>
+      </div>
+
+      <!-- Quick Stats Row -->
+      <div class="stats-row">
+        <div class="stat-item">
+          <h3>1st Year</h3>
+          <p>BSEMC – Section 1C</p>
+        </div>
+        <div class="stat-item">
+          <h3>2601113232</h3>
+          <p>Official Student ID</p>
+        </div>
+        <div class="stat-item">
+          <h3>Bukidnon</h3>
+          <p>Malaybalay City, PH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section reveal">
+    <div class="container about-grid">
+      <div class="about-image-wrapper">
+        <img src="james.jpg">
+        <div class="floating-card">
+          <span class="fc-title">Student ID</span>
+          <span class="fc-val">2601113232</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag">About Me</span>
+        <h2>Blending Creativity with Computing Technology</h2>
+        <p>
+          Hello! I'm <strong>James B. Ampo-an</strong>, a 1st-year BSEMC student at Bukidnon State University<strong></strong><strong> living in Malaybalay City.</strong>  My primary focus is on programming fundamentals, web development, and building interactive digital experiences.  
+        </p>
+        <p>
+          Currently, I'm sharpening my skills in front-end development, responsive layouts, and problem-solving through code constantly exploring new tools to build faster, more intuitive web applications.
+        </p>
+
+        <div class="details-grid">
+          <div class="detail-box">
+            <span class="detail-label">Student Name</span>
+            <span class="detail-value">James B. Ampo-an</span>
+          </div>
+          <div class="detail-box">
+            <span class="detail-label">Course & Section</span>
+            <span class="detail-value">BSEMC – 1C (1st Year)</span>
+          </div>
+          <div class="detail-box">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Malaybalay City, Bukidnon</span>
+          </div>
+          <div class="detail-box">
+            <span class="detail-label">Student ID</span>
+            <span class="detail-value">2601113232</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Services / Skills Section -->
+  <section id="skills" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities & Interests</span>
+        <h2>Skills & Personal Pursuits</h2>
+        <p>A blend of technical exploration, creative expression, and competitive teamwork.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">&#9917;</div>
+          <h3>Athletics & Team Collaboration</h3>
+          <p>Actively participating in basketball, cultivating discipline, strategic court awareness, and effective teamwork under pressure.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>Software & Programming Exploration</h3>
+          <p>Continuously exploring core programming concepts, web technologies, and structured problem-solving to build interactive applications.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9998;</div>
+          <h3>Traditional & Digital Illustration</h3>
+          <p>Practicing freehand sketching and visual composition as a creative outlet to strengthen design intuition and visual storytelling.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9783;</div>
+          <h3>Competitive Gaming & Strategy</h3>
+          <p>Engaging in tactical mobile esports such as Call of Duty: Mobile, sharpening rapid decision-making, reflexes, and game mechanics analysis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Featured Student Projects Section -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2>Academic & Creative Works</h2>
+        <p>Highlights of my artistic sketches, athletic participation, and introductory computing projects.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card project-card">
+          <span class="project-tag">Visual Arts &bull; Freehand Drawing</span>
+          <h3>Personal Sketchbook & Drawing Collection</h3>
+          <p>A curated portfolio of pencil sketches, character studies, and shading exercises exploring form, perspective, and visual creativity.</p>
+        </div>
+        <div class="card project-card">
+          <span class="project-tag">Athletics &bull; Basketball</span>
+          <h3>Collegiate & Intramural Sports Participation</h3>
+          <p>Active involvement in competitive basketball leagues, demonstrating athletic endurance, court strategy, and collaborative team spirit.</p>
+        </div>
+        <div class="card project-card">
+          <span class="project-tag">Web &bull; Programming</span>
+          <h3>Interactive Student Portfolio Website</h3>
+          <p>A self-built responsive web project showcasing foundational HTML, CSS, and JavaScript skills with a custom student portal interface.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Connect</span>
+        <h2>Contact Information</h2>
+        <p>Reach out for school collaborations, multimedia projects, or inquiries.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info-panel">
+          <div class="contact-item">
+            <h3>Email Address</h3>
+            <p>jimsberongoy@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <h3>Contact Number</h3>
+            <p>09458275407</p>
+          </div>
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Malaybalay City, Bukidnon, Philippines</p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="senderName">Your Name</label>
+            <input type="text" id="senderName" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="senderEmail">Your Email</label>
+            <input type="email" id="senderEmail" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="senderMessage">Message</label>
+            <textarea id="senderMessage" rows="4" placeholder="Write your message for James..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+          <p id="formFeedback" class="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p><strong>James B. Ampo-an</strong> &bull; BSEMC – 1C</p>
+      <p class="copyright">&copy; 2026 James B. Ampo-an &bull; All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- GUI Login Modal -->
+  <div id="loginModal" class="modal-overlay hidden">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Student Portal Login</h3>
+        <button id="closeLoginBtn" class="close-btn">&times;</button>
+      </div>
+      <p class="modal-sub">Log in as James B. Ampo-an or enter a guest name to access the live dashboard toolbar.</p>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginUsername">Student Name / Username</label>
+          <input type="text" id="loginUsername" value="James B. Ampo-an" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Student ID / Password</label>
+          <input type="password" id="loginPassword" placeholder="e.g., 2601113232" required>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
